@@ -42,7 +42,7 @@ Contributions, issues and feature requests are welcome! Start by:
 👤 Suyash Fowdar
 Github: [@Krishnzzz](https://github.com/krishnzzz)
 
-👤 Elisha Kyakopo
+👤 Pascal Byabasaija
 Github: [@Byabasaija](https://github.com/Byabasaija)
 
 ## Show your Support
