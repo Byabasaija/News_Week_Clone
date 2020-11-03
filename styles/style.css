@@ -81,43 +81,13 @@ h3 {
   color: #f72210;
 }
 
-.section-2,
-.section-3,
-.section-3 > div:last-child,
-.section-4 {
-  position: relative;
-  padding-top: 36px;
+.opinion-container article {
+  height: 100px;
+  border-bottom: 1px solid #d9d9d9;
 }
-.section-2::before,
-.section-3::before,
-.section-3 > div:last-child::before,
-.section-4::before {
-  content: "";
-  display: block;
-  height: 18px;
-  background-color: #f4f5f7;
-  border-top: 1px solid #e2e2e2;
-  position: absolute;
-  width: calc(100% + 30px);
-  top: 0;
-  left: -15px;
-  right: -15px;
-}
-
-.section-4 figure {
-  position: relative;
-}
-.section-4 figure figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 8px 15px;
-  color: #3581F4;
-}
-.section-4 h3,
-.section-4 p {
-  padding: 0 20px;
+.opinion-container article img {
+  height: 63px;
+  margin-right: 15px;
 }
 
 .debate-container {
@@ -150,13 +120,47 @@ h3 {
   color: #fff;
 }
 
-.opinion-container article {
-  height: 100px;
-  border-bottom: 1px solid #d9d9d9;
+.section-2,
+.section-3,
+.section-3 > div:last-child,
+.section-4,
+.section-5,
+.section-6 {
+  position: relative;
+  padding-top: 36px;
 }
-.opinion-container article img {
-  height: 63px;
-  margin-right: 15px;
+.section-2::before,
+.section-3::before,
+.section-3 > div:last-child::before,
+.section-4::before,
+.section-5::before,
+.section-6::before {
+  content: "";
+  display: block;
+  height: 18px;
+  background-color: #f4f5f7;
+  border-top: 1px solid #e2e2e2;
+  position: absolute;
+  width: calc(100% + 30px);
+  top: 0;
+  left: -15px;
+  right: -15px;
+}
+
+.section-4 figure {
+  position: relative;
+}
+.section-4 figure figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 8px 15px;
+  color: #3581f4;
+}
+.section-4 h3,
+.section-4 p {
+  padding: 0 20px;
 }
 
 .subscribe-btn {
@@ -173,6 +177,7 @@ h3 {
 
 .grid {
   display: grid;
+  display: -ms-grid;
 }
 
 .row {
@@ -198,6 +203,41 @@ h3 {
 
 .main-space-between {
   justify-content: space-between;
+}
+
+.more-stories-container {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top: 1px solid #ddd;
+  padding: 14px 0;
+}
+.more-stories-container h4 {
+  font-size: 17px;
+  margin-top: 0;
+}
+.more-stories-container p {
+  font-size: 13px;
+}
+
+.more-stories-fig {
+  width: 95px;
+  height: 95px;
+  float: left;
+  margin-right: 10px;
+}
+
+.myturn {
+  display: block;
+}
+.myturn img {
+  position: relative;
+}
+.myturn p {
+  color: #03030380;
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 /* Mobile */

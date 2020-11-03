@@ -141,7 +141,9 @@ h3 {
 .section-2,
 .section-3,
 .section-3 > div:last-child,
-.section-4 {
+.section-4,
+.section-5,
+.section-6 {
   position: relative;
   padding-top: 36px;
 
@@ -220,6 +222,42 @@ h3 {
 .main-space-between {
   justify-content: space-between;
 }
+
+.more-stories-container {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top: 1px solid #ddd;
+  padding: 14px 0;
+  h4 {
+    font-size: 17px;
+    margin-top: 0;
+  }
+  p {
+    font-size: 13px;
+  }
+}
+
+.more-stories-fig {
+  width: 95px;
+  height: 95px;
+  float: left;
+  margin-right: 10px;
+}
+
+.myturn {
+  display: block;
+  img {
+    position: relative;
+  }
+  p {
+    color: #03030380;
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
 
 /* Mobile */
 @media screen and (max-width: 767px) {
