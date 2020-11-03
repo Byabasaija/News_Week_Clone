@@ -1,0 +1,72 @@
+@font-face {
+  font-family: roboto;
+  font-weight: normal;
+  src: url("assets/fonts/robotocondensed-regular-webfont.woff2");
+}
+
+@font-face {
+  font-family: roboto;
+  font-weight: bold;
+  src: url("assets/fonts/robotocondensed-bold-webfont.woff2");
+}
+
+@font-face {
+  font-family: interui;
+  font-weight: normal;
+  src: url("assets/fonts/Inter-UI-Regular.woff2");
+}
+
+@font-face {
+  font-family: generic;
+  src: url("assets/fonts/Genericons.woff");
+}
+
+$primary-color: #f72210;
+
+.nw-icon {
+  height: 20px;
+  fill: #fff;
+}
+
+.topbar-1 {
+  background-color: $primary-color;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.subscribe-btn {
+  background-color: #ffe400;
+  color: black;
+  border-radius: 24px;
+  display: flex;
+  border: 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.row {
+  margin: 0;
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .hide-mob {
+    display: none;
+  }
+
+  img {
+    max-width: 100vw;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Desktop */
+@media screen and (min-width: 992px) {}
