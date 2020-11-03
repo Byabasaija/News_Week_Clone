@@ -17,6 +17,10 @@
   font-family: generic;
   src: url("assets/fonts/Genericons.woff");
 }
+* html {
+  box-sizing: border-box;
+}
+
 .nw-icon {
   height: 20px;
   fill: #fff;
@@ -28,6 +32,8 @@
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100vw;
   z-index: 1;
 }
@@ -55,7 +61,7 @@
   }
 
   img {
-    max-width: 100vw;
+    max-width: 100%;
   }
 }
 /* Tablet */
