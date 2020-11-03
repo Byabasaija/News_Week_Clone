@@ -67,18 +67,61 @@ h3 {
   margin-left: 10px;
 }
 
-.section-1 figure,
-.section-2 figure {
+.section-1 figcaption,
+.section-2 figcaption {
+  padding: 8px 15px;
+  color: #f72210;
+}
+
+.section-4 figcaption {
+  padding: 8px 15px;
+  color: #3581f4;
+}
+.section-4 h3,
+.section-4 p {
+  padding: 0 20px;
+}
+
+.caption-absolute figure {
   position: relative;
 }
-.section-1 figure figcaption,
-.section-2 figure figcaption {
+.caption-absolute figure figcaption {
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.9);
-  padding: 8px 15px;
-  color: #f72210;
+}
+
+.more-stories-container {
+  display: block;
+  border-top: 1px solid #ddd;
+  padding: 14px 0;
+}
+.more-stories-container h4 {
+  font-size: 17px;
+  margin-top: 0;
+}
+.more-stories-container p {
+  font-size: 13px;
+}
+
+.section-6 article {
+  display: block;
+}
+.section-6 article img {
+  position: relative;
+}
+.section-6 article p {
+  color: rgba(3, 3, 3, 0.5);
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.section-6 article figcaption {
+  padding: 0 6px;
+  font-size: 13px;
+  color: #333;
+  background-color: #c2d4d7;
 }
 
 .opinion-container article {
@@ -147,22 +190,6 @@ h3 {
   right: -15px;
 }
 
-.section-4 figure {
-  position: relative;
-}
-.section-4 figure figcaption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 8px 15px;
-  color: #3581f4;
-}
-.section-4 h3,
-.section-4 p {
-  padding: 0 20px;
-}
-
 .subscribe-btn {
   background-color: #ffe400;
   color: black;
@@ -205,39 +232,11 @@ h3 {
   justify-content: space-between;
 }
 
-.more-stories-container {
-  display: block;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  border-top: 1px solid #ddd;
-  padding: 14px 0;
-}
-.more-stories-container h4 {
-  font-size: 17px;
-  margin-top: 0;
-}
-.more-stories-container p {
-  font-size: 13px;
-}
-
 .more-stories-fig {
   width: 95px;
   height: 95px;
   float: left;
   margin-right: 10px;
-}
-
-.myturn {
-  display: block;
-}
-.myturn img {
-  position: relative;
-}
-.myturn p {
-  color: #03030380;
-  margin: 0 0 10px;
-  font-size: 16px;
-  font-weight: bold;
 }
 
 /* Mobile */
