@@ -354,11 +354,15 @@ h3 {
   border-radius: 24px;
   display: flex;
   border: 0;
+  margin: 0 10px;
 }
 
-.nav-button-container {
-  margin-left: auto;
+.nav-button-container{
+  justify-content: flex-end;
+  flex: 1 1;
+  padding-right: 10px;
 }
+
 
 .n-icon {
   display: block;
