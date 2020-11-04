@@ -94,6 +94,15 @@ h3 {
   }
 }
 
+.section-8 {
+  figcaption {
+     padding: 9px 15px 9px;
+     background-color: rgba(255,255,255,.9);
+     font: bold 17px/16px "Roboto Condensed",sans-serif;
+     color: $primary-color;
+  }
+}
+
 .caption-absolute {
   figure {
     position: relative;
@@ -301,6 +310,30 @@ h3 {
   margin-right: 10px;
 }
 
+.subscribe-section1 {
+  background-color: #f4f5f6;
+  padding: 24px 20px 20px;
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .button {
+    background: $primary-color;
+    color: #f4f5f6;
+    border: 0;
+}
+}
+
+.subscribe-newsletter {
+  h3{
+    font: bold 16px/16px "Roboto",sans-serif;
+    padding-bottom: 11px;
+    color: $primary-color;
+  }
+}
+
 /* Mobile */
 @media screen and (max-width: 767px) {
   .hide-mob {
@@ -309,6 +342,9 @@ h3 {
 
   img {
     max-width: 100%;
+  }
+  .subscribe-section1 {
+    text-align: center;
   }
 }
 
