@@ -163,21 +163,11 @@ h3 {
   color: #fff;
 }
 
-.section-2,
-.section-3,
-.section-3 > div:last-child,
-.section-4,
-.section-5,
-.section-6 {
+.content-divider {
   position: relative;
   padding-top: 36px;
 }
-.section-2::before,
-.section-3::before,
-.section-3 > div:last-child::before,
-.section-4::before,
-.section-5::before,
-.section-6::before {
+.content-divider::before {
   content: "";
   display: block;
   height: 18px;
@@ -200,6 +190,40 @@ h3 {
 
 .nav-button-container {
   margin-left: auto;
+}
+
+.n-icon {
+  display: block;
+  width: 29px;
+  height: 28px;
+  background: url(../assets/icons/logo-n1.svg) center/contain no-repeat #f72210;
+  margin-right: 10px;
+}
+
+.section-7 h2 {
+  font: bold 19px/19px roboto, sans-serif;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #333;
+}
+.section-7 h3 {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: roboto, sans-serif;
+  margin: 10px 0;
+}
+.section-7 article > span {
+  font: bold 16px/26px roboto, sans-serif;
+  font-weight: bold;
+}
+.section-7 article > span:first-of-type {
+  padding: 0 7px;
+  background-color: #f72210;
+  color: white;
+  margin-right: 7px;
+}
+.section-7 article > span:last-of-type {
+  color: #f72210;
 }
 
 .grid {
