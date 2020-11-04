@@ -288,23 +288,6 @@ h3 {
   color: #fff;
 }
 
-.content-divider {
-  position: relative;
-  padding-top: 36px;
-}
-.content-divider::before {
-  content: "";
-  display: block;
-  height: 18px;
-  background-color: #f4f5f7;
-  border-top: 1px solid #e2e2e2;
-  position: absolute;
-  width: calc(100% + 30px);
-  top: 0;
-  left: -15px;
-  right: -15px;
-}
-
 .subscribe-btn {
   background-color: #ffe400;
   color: black;
@@ -411,14 +394,31 @@ h3 {
   color: #f72210;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Mobile */
 @media screen and (max-width: 767px) {
   .hide-mob {
     display: none;
   }
 
-  img {
-    max-width: 100%;
+  .content-divider {
+    position: relative;
+    padding-top: 36px;
+  }
+  .content-divider::before {
+    content: "";
+    display: block;
+    height: 18px;
+    background-color: #f4f5f7;
+    border-top: 1px solid #e2e2e2;
+    position: absolute;
+    width: calc(100% + 30px);
+    top: 0;
+    left: -15px;
+    right: -15px;
   }
 
   .subscribe-section1 {
