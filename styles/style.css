@@ -21,8 +21,59 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 main {
-  padding-top: 50px;
+  padding-top: 70px;
+  font-family: roboto, sans-serif;
+}
+
+.nw-icon {
+  height: 20px;
+  fill: #fff;
+}
+
+footer {
+  font-size: 14px;
+  color: #666;
+  padding: 30px 15px;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  margin: 3px 10px;
+}
+footer ul li a {
+  color: #666;
+}
+footer .nw-icon {
+  height: 36px;
+  fill: #f72210;
+}
+footer .footer-icons {
+  font-size: 25px;
+  cursor: pointer;
+}
+footer .footer-icons .fab {
+  margin-right: 10px;
+}
+footer .footer-icons .fa-facebook-square {
+  font-size: 26px;
+}
+footer .footer-icons .fa-tumblr {
+  font-size: 20px;
+}
+footer .copyright {
+  font-size: 12px;
+  margin: 10px 0;
+}
+footer section:first-child {
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .section-1 h2,
@@ -31,14 +82,14 @@ main {
 .section-4 h2,
 .section-5 h2,
 .section-6 h2 {
-  font: bold 16px/16px roboto, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
   text-transform: uppercase;
   padding-bottom: 11px;
   color: rgba(3, 3, 3, 0.4);
 }
 
 h3 {
-  font-family: roboto, sans-serif;
   font-weight: bold;
   font-size: 22px;
   line-height: 24px;
@@ -50,11 +101,6 @@ h3 {
   font-size: 13px;
   line-height: 18px;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.nw-icon {
-  height: 20px;
-  fill: #fff;
 }
 
 .topbar-1 {
@@ -88,9 +134,21 @@ h3 {
 }
 
 .section-5 h4 {
-  font-family: roboto, sans-serif;
   font-weight: bold;
   color: #000;
+}
+
+.more-stories-container {
+  display: block;
+  border-top: 1px solid #ddd;
+  padding: 14px 0;
+}
+.more-stories-container h4 {
+  font-size: 17px;
+  margin-top: 0;
+}
+.more-stories-container p {
+  font-size: 13px;
 }
 
 .section-9 h4,
@@ -99,7 +157,6 @@ h3 {
 .section-12 h4,
 .section-13 h4,
 .section-14 h4 {
-  font-family: roboto, sans-serif;
   font-weight: bold;
   color: #000;
 }
@@ -115,11 +172,28 @@ h3 {
   border-top: 1px solid #d9d9d9;
   color: #f72210;
 }
+.section-9 h3,
+.section-10 h3,
+.section-11 h3,
+.section-12 h3,
+.section-13 h3,
+.section-14 h3 {
+  font-size: 18px;
+}
+.section-9 .more-stories-container:first-of-type,
+.section-10 .more-stories-container:first-of-type,
+.section-11 .more-stories-container:first-of-type,
+.section-12 .more-stories-container:first-of-type,
+.section-13 .more-stories-container:first-of-type,
+.section-14 .more-stories-container:first-of-type {
+  border: 0;
+}
 
 .section-8 figcaption {
   padding: 9px 15px 9px;
   background-color: rgba(255, 255, 255, 0.9);
-  font: bold 17px/16px roboto, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
   color: #f72210;
 }
 
@@ -131,19 +205,6 @@ h3 {
   bottom: 0;
   left: 0;
   background-color: rgba(255, 255, 255, 0.9);
-}
-
-.more-stories-container {
-  display: block;
-  border-top: 1px solid #ddd;
-  padding: 14px 0;
-}
-.more-stories-container h4 {
-  font-size: 17px;
-  margin-top: 0;
-}
-.more-stories-container p {
-  font-size: 13px;
 }
 
 .subscribe-section1 {
@@ -160,6 +221,13 @@ h3 {
   background: #f72210;
   color: #f4f5f6;
   border: 0;
+  height: 38px;
+  padding: 0 20px;
+}
+.subscribe-section1 input[type=text] {
+  border: 1px solid #d9d9d9;
+  border-right: 0;
+  height: 38px;
 }
 
 .section-6 article {
@@ -258,7 +326,8 @@ h3 {
 }
 
 .section-7 h2 {
-  font: bold 19px/19px roboto, sans-serif;
+  font-weight: bold;
+  font-size: 19px;
   margin-bottom: 15px;
   text-transform: uppercase;
   color: #333;
@@ -266,12 +335,11 @@ h3 {
 .section-7 h3 {
   font-size: 16px;
   line-height: 16px;
-  font-family: roboto, sans-serif;
   margin: 10px 0;
 }
 .section-7 article > span {
-  font: bold 16px/26px roboto, sans-serif;
   font-weight: bold;
+  font-size: 16px;
 }
 .section-7 article > span:first-of-type {
   padding: 0 7px;
@@ -292,9 +360,14 @@ h3 {
   margin: 0;
 }
 
+.column-flex,
 .row-flex-reverse,
 .row-flex {
   display: flex;
+}
+
+.column-flex {
+  flex-direction: column;
 }
 
 .row-flex-reverse {
@@ -313,6 +386,14 @@ h3 {
   justify-content: space-between;
 }
 
+.main-start {
+  justify-content: flex-start;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
 .more-stories-fig {
   width: 95px;
   height: 95px;
@@ -321,7 +402,8 @@ h3 {
 }
 
 .subscribe-newsletter h3 {
-  font: bold 16px/16px roboto, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
   padding-bottom: 11px;
   color: #f72210;
 }

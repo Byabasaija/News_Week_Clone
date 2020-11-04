@@ -22,13 +22,75 @@
 }
 
 $primary-color: #f72210;
+$secondary-color: #d9d9d9;
 
 * {
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 main {
-  padding-top: 50px;
+  padding-top: 70px;
+  font-family: roboto, sans-serif;
+}
+
+.nw-icon {
+  height: 20px;
+  fill: #fff;
+}
+
+footer {
+  font-size: 14px;
+  color: #666;
+  padding: 30px 15px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 3px 10px;
+
+      a {
+        color: #666;
+      }
+    }
+  }
+
+  .nw-icon {
+    height: 36px;
+    fill: $primary-color;
+  }
+
+  .footer-icons {
+    font-size: 25px;
+    cursor: pointer;
+
+    .fab {
+      margin-right: 10px;
+    }
+
+    .fa-facebook-square {
+      font-size: 26px;
+    }
+
+    .fa-tumblr {
+      font-size: 20px;
+    }
+  }
+
+  .copyright {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  section:first-child {
+    border-bottom: 1px solid $secondary-color;
+  }
 }
 
 .section-1,
@@ -38,7 +100,8 @@ main {
 .section-5,
 .section-6 {
   h2 {
-    font: bold 16px/16px roboto, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
     text-transform: uppercase;
     padding-bottom: 11px;
     color: rgba(3, 3, 3, 0.4);
@@ -46,7 +109,6 @@ main {
 }
 
 h3 {
-  font-family: roboto, sans-serif;
   font-weight: bold;
   font-size: 22px;
   line-height: 24px;
@@ -58,11 +120,6 @@ h3 {
   font-size: 13px;
   line-height: 18px;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-.nw-icon {
-  height: 20px;
-  fill: #fff;
 }
 
 .topbar-1 {
@@ -103,52 +160,8 @@ h3 {
 
 .section-5 {
   h4 {
-    font-family: roboto, sans-serif;
     font-weight: bold;
     color: #000;
-  }
-}
-
-.section-9,
-.section-10,
-.section-11,
-.section-12,
-.section-13,
-.section-14 {
-  h4 {
-    font-family: roboto, sans-serif;
-    font-weight: bold;
-    color: #000;
-  }
-
-  h2 {
-    font-size: 22px;
-    margin-top: 25px;
-    padding-top: 25px;
-    border-top: 1px solid #d9d9d9;
-    color: $primary-color;
-  }
-}
-
-.section-8 {
-  figcaption {
-    padding: 9px 15px 9px;
-    background-color: rgba(255, 255, 255, 0.9);
-    font: bold 17px/16px roboto, sans-serif;
-    color: $primary-color;
-  }
-}
-
-.caption-absolute {
-  figure {
-    position: relative;
-
-    figcaption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-color: rgba(255, 255, 255, 0.9);
-    }
   }
 }
 
@@ -164,6 +177,57 @@ h3 {
 
   p {
     font-size: 13px;
+  }
+}
+
+.section-9,
+.section-10,
+.section-11,
+.section-12,
+.section-13,
+.section-14 {
+  h4 {
+    font-weight: bold;
+    color: #000;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid $secondary-color;
+    color: $primary-color;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .more-stories-container:first-of-type {
+    border: 0;
+  }
+}
+
+.section-8 {
+  figcaption {
+    padding: 9px 15px 9px;
+    background-color: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+    font-size: 17px;
+    color: $primary-color;
+  }
+}
+
+.caption-absolute {
+  figure {
+    position: relative;
+
+    figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
   }
 }
 
@@ -183,6 +247,14 @@ h3 {
     background: $primary-color;
     color: #f4f5f6;
     border: 0;
+    height: 38px;
+    padding: 0 20px;
+  }
+
+  input[type="text"] {
+    border: 1px solid $secondary-color;
+    border-right: 0;
+    height: 38px;
   }
 }
 
@@ -213,7 +285,7 @@ h3 {
 .opinion-container {
   article {
     height: 100px;
-    border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid $secondary-color;
 
     img {
       height: 63px;
@@ -223,8 +295,8 @@ h3 {
 }
 
 .debate-container {
-  border-top: 4px solid #d9d9d9;
-  border-bottom: 4px solid #d9d9d9;
+  border-top: 4px solid $secondary-color;
+  border-bottom: 4px solid $secondary-color;
   margin-bottom: 20px;
 
   & > div {
@@ -235,7 +307,7 @@ h3 {
     }
 
     &:first-child {
-      border-bottom: 2px solid #d9d9d9;
+      border-bottom: 2px solid $secondary-color;
 
       img {
         margin-right: 15px;
@@ -298,7 +370,8 @@ h3 {
 
 .section-7 {
   h2 {
-    font: bold 19px/19px roboto, sans-serif;
+    font-weight: bold;
+    font-size: 19px;
     margin-bottom: 15px;
     text-transform: uppercase;
     color: #333;
@@ -307,13 +380,12 @@ h3 {
   h3 {
     font-size: 16px;
     line-height: 16px;
-    font-family: roboto, sans-serif;
     margin: 10px 0;
   }
 
   article > span {
-    font: bold 16px/26px roboto, sans-serif;
     font-weight: bold;
+    font-size: 16px;
 
     &:first-of-type {
       padding: 0 7px;
@@ -337,9 +409,14 @@ h3 {
   margin: 0;
 }
 
+.column-flex,
 .row-flex-reverse,
 .row-flex {
   display: flex;
+}
+
+.column-flex {
+  flex-direction: column;
 }
 
 .row-flex-reverse {
@@ -358,6 +435,14 @@ h3 {
   justify-content: space-between;
 }
 
+.main-start {
+  justify-content: flex-start;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
 .more-stories-fig {
   width: 95px;
   height: 95px;
@@ -367,7 +452,8 @@ h3 {
 
 .subscribe-newsletter {
   h3 {
-    font: bold 16px/16px roboto, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
     padding-bottom: 11px;
     color: $primary-color;
   }
