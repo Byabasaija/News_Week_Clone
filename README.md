@@ -1,6 +1,6 @@
 # News_Week_Clone
 
-> Third Project at Microverse to get better at using CSS frameworks like Bootstrap.
+> Third Project at Microverse to get better at using CSS frameworks like Bootstrap. In this project we are cloning the Newsweek homepage.
 
 ![microverse](https://camo.githubusercontent.com/3a5835d4f56c57cec85939ac345e43fef164c178/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6963726f76657273652d626c756576696f6c6574)
 
