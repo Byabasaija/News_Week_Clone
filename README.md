@@ -31,7 +31,7 @@ It is a static version. All contents (texts, images, icons and fonts) have been 
 - VScode
 
 ## Demo Link
-[Live Demo Link](https://krishnzzz.github.io/News_Week_Clone/)
+[Live Demo Link](https://krishnzzz.github.io/Newsweek_Clone/)
 
 ## Contributing
 Contributions, issues and feature requests are welcome! Start by:
