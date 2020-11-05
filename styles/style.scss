@@ -93,6 +93,10 @@ footer {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 .section-1,
 .section-2,
 .section-3,
@@ -339,12 +343,11 @@ h3 {
   margin: 0 10px;
 }
 
-.nav-button-container{
+.nav-button-container {
   justify-content: flex-end;
   flex: 1 1;
   padding-right: 10px;
 }
-
 
 .n-icon {
   display: block;
@@ -445,34 +448,29 @@ h3 {
   }
 }
 
-img {
-    max-width: 100%;
-  }
-
 /* Mobile */
 @media screen and (max-width: 767px) {
   .hide-mob {
     display: none;
   }
 
-.content-divider {
-  position: relative;
-  padding-top: 36px;
+  .content-divider {
+    position: relative;
+    padding-top: 36px;
 
-  &::before {
-    content: "";
-    display: block;
-    height: 18px;
-    background-color: #f4f5f7;
-    border-top: 1px solid #e2e2e2;
-    position: absolute;
-    width: calc(100% + 30px);
-    top: 0;
-    left: -15px;
-    right: -15px;
+    &::before {
+      content: "";
+      display: block;
+      height: 18px;
+      background-color: #f4f5f7;
+      border-top: 1px solid #e2e2e2;
+      position: absolute;
+      width: calc(100% + 30px);
+      top: 0;
+      left: -15px;
+      right: -15px;
+    }
   }
-}
-
 
   .subscribe-section1 {
     text-align: center;

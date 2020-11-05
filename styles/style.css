@@ -76,6 +76,10 @@ footer section:first-child {
   border-bottom: 1px solid #d9d9d9;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section-1 h2,
 .section-2 h2,
 .section-3 h2,
@@ -392,10 +396,6 @@ h3 {
   font-size: 16px;
   padding-bottom: 11px;
   color: #f72210;
-}
-
-img {
-  max-width: 100%;
 }
 
 /* Mobile */
