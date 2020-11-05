@@ -31,7 +31,9 @@ $secondary-color: #d9d9d9;
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+ul {
+  list-style-type: none;
+}
 main {
   padding-top: 70px;
   font-family: roboto, sans-serif;
@@ -48,7 +50,6 @@ footer {
   padding: 30px 15px;
 
   ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
 
@@ -139,6 +140,34 @@ h3 {
 
   svg {
     margin-left: 10px;
+  }
+}
+
+.topbar-2 {
+  background-color: $primary-color;
+  height: 90px;
+  position: relative;;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  z-index: 1;
+
+  svg {
+    display: block;
+    align-items: center;
+  }
+}
+
+.white-nav {
+  margin: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  position: relative;
+  height: 50px;
+  ul {
+    border-bottom: solid 1px  $secondary-color;
   }
 }
 
@@ -481,4 +510,13 @@ h3 {
 @media screen and (min-width: 768px) and (max-width: 991px) {}
 
 /* Desktop */
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+  .nw-icon {
+  }
+  .topbar-1 {
+    display: none;
+  }
+  .topbar-2 {
+   display: block;
+  }
+}
