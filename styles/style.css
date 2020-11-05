@@ -39,6 +39,11 @@ main {
   fill: #fff;
 }
 
+.row {
+  margin: 0;
+  padding: 0;
+}
+
 footer {
   font-size: 14px;
   color: #666;
@@ -53,6 +58,11 @@ footer ul li {
 }
 footer ul li a {
   color: #666;
+}
+footer section:first-child {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d9d9d9;
 }
 footer .nw-icon {
   height: 36px;
@@ -74,9 +84,6 @@ footer .footer-icons .fa-tumblr {
 footer .copyright {
   font-size: 12px;
   margin: 10px 0;
-}
-footer section:first-child {
-  border-bottom: 1px solid #d9d9d9;
 }
 
 img {
@@ -123,22 +130,6 @@ h3 {
 }
 .topbar-1 svg {
   margin-left: 10px;
-}
-
-.topbar-2 {
-  background-color: #f72210;
-  height: 90px;
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100vw;
-  z-index: 1;
-}
-.topbar-2 svg {
-  display: block;
-  align-items: center;
 }
 
 .white-nav {
@@ -203,6 +194,7 @@ h3 {
   font-size: 22px;
   margin-top: 25px;
   padding-top: 25px;
+  font-weight: bold;
   border-top: 1px solid #d9d9d9;
   color: #f72210;
 }
@@ -241,24 +233,29 @@ h3 {
   background-color: rgba(255, 255, 255, 0.9);
 }
 
-.subscribe-section1 {
+.subscribe-section1,
+.subscribe-section2 {
   background-color: #f4f5f6;
   padding: 24px 20px 20px;
 }
-.subscribe-section1 h3 {
+.subscribe-section1 h3,
+.subscribe-section2 h3 {
   font-size: 20px;
 }
-.subscribe-section1 p {
+.subscribe-section1 p,
+.subscribe-section2 p {
   font-size: 16px;
 }
-.subscribe-section1 .button {
+.subscribe-section1 .button,
+.subscribe-section2 .button {
   background: #f72210;
   color: #f4f5f6;
   border: 0;
   height: 38px;
   padding: 0 20px;
 }
-.subscribe-section1 input[type=text] {
+.subscribe-section1 input[type=text],
+.subscribe-section2 input[type=text] {
   border: 1px solid #d9d9d9;
   border-right: 0;
   height: 38px;
@@ -345,39 +342,40 @@ h3 {
   margin-right: 10px;
 }
 
-.section-7 h2 {
+.section-7 h2,
+.section-8 h2 {
   font-weight: bold;
   font-size: 19px;
   margin-bottom: 15px;
   text-transform: uppercase;
   color: #333;
 }
-.section-7 h3 {
+.section-7 h3,
+.section-8 h3 {
   font-size: 16px;
   line-height: 16px;
   margin: 10px 0;
 }
-.section-7 article > span {
+.section-7 article > span,
+.section-8 article > span {
   font-weight: bold;
   font-size: 16px;
 }
-.section-7 article > span:first-of-type {
+.section-7 article > span:first-of-type,
+.section-8 article > span:first-of-type {
   padding: 0 7px;
   background-color: #f72210;
   color: white;
   margin-right: 7px;
 }
-.section-7 article > span:last-of-type {
+.section-7 article > span:last-of-type,
+.section-8 article > span:last-of-type {
   color: #f72210;
 }
 
 .grid {
   display: grid;
   display: -ms-grid;
-}
-
-.row {
-  margin: 0;
 }
 
 .column-flex,
@@ -402,12 +400,20 @@ h3 {
   align-items: center;
 }
 
+.cross-end {
+  align-items: flex-end;
+}
+
 .main-space-between {
   justify-content: space-between;
 }
 
 .main-start {
   justify-content: flex-start;
+}
+
+.main-end {
+  justify-content: flex-end;
 }
 
 .wrap {
@@ -451,19 +457,65 @@ h3 {
     right: -15px;
   }
 
-  .subscribe-section1 {
+  .subscribe-section1,
+.subscribe-section2 {
     text-align: center;
   }
 }
-/* Tablet */
 /* Desktop */
 @media screen and (min-width: 992px) {
-  .topbar-1 {
-    display: none;
+  .nw-icon {
+    height: 60px;
   }
 
-  .topbar-2 {
-    display: block;
+  .subscribe-section2 {
+    padding: 0;
+  }
+  .subscribe-section2 figure {
+    padding: 0;
+    margin: 0;
+  }
+  .subscribe-section2 div {
+    padding: 24px;
+  }
+  .subscribe-section2 img {
+    height: 290px;
+  }
+
+  .topbar-1 {
+    height: 90px;
+    position: relative;
+    width: 100%;
+    color: #fff;
+  }
+  .topbar-1 > div > div:first-child {
+    font-weight: bold;
+  }
+
+  .white-nav .white-nav1 li {
+    padding: 0 15px;
+  }
+  .white-nav .white-nav2 li {
+    padding: 0 15px;
+  }
+  .white-nav .white-nav2 li:not(:first-child) {
+    color: #807f84;
+  }
+  .white-nav .white-nav1 li:not(:first-child):not(:last-child) {
+    border-left: 1px solid #d9d9d9;
+  }
+
+  footer .copyright {
+    margin: 0 10px;
+  }
+
+  .section-9 h2,
+.section-10 h2,
+.section-11 h2,
+.section-12 h2,
+.section-13 h2,
+.section-14 h2 {
+    margin-left: 16px;
   }
 }
 
