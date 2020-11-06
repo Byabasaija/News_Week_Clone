@@ -34,6 +34,11 @@ main {
   font-family: roboto, sans-serif;
 }
 
+.sticky {
+  top: 0;
+  position: sticky;
+}
+
 .nw-icon {
   height: 20px;
   fill: #fff;
@@ -58,6 +63,10 @@ footer ul li {
 }
 footer ul li a {
   color: #666;
+}
+footer ul li:not(:first-child):not(:last-child) {
+  border-left: 1px solid #d9d9d9;
+  padding-left: 10px;
 }
 footer section:first-child {
   padding-bottom: 10px;
@@ -473,6 +482,14 @@ h3 {
     text-align: center;
   }
 }
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .section-15 .subscribe-newsletter {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #d9d9d9;
+  }
+}
 /* Desktop */
 @media screen and (min-width: 992px) {
   .nw-icon {
@@ -514,6 +531,12 @@ h3 {
   }
   .white-nav .white-nav1 li:not(:first-child):not(:last-child) {
     border-left: 1px solid #d9d9d9;
+  }
+
+  .section-15 .subscribe-newsletter {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 3px solid #d9d9d9;
   }
 
   footer .copyright {

@@ -71,6 +71,10 @@ footer {
       a {
         color: #666;
       }
+     &:not(:first-child):not(:last-child) {
+      border-left: 1px solid $secondary-color;
+      padding-left: 10px;
+     }
     }
   }
 
@@ -521,6 +525,17 @@ h3 {
   }
 }
 
+/*Tablet*/
+@media screen and (min-width: 768px) and (max-width:991px){
+  .section-15 {
+  .subscribe-newsletter {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid $secondary-color;
+  }
+}
+}
+
 /* Desktop */
 @media screen and (min-width: 992px) {
   .nw-icon {
@@ -572,6 +587,14 @@ h3 {
       border-left: 1px solid $secondary-color;
     }
   }
+
+  .section-15 {
+  .subscribe-newsletter {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 3px solid $secondary-color;
+  }
+}
 
   footer {
     .copyright {
