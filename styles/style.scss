@@ -41,6 +41,11 @@ main {
   font-family: roboto, sans-serif;
 }
 
+.sticky {
+  top: 0;
+  position: sticky;
+}
+
 .nw-icon {
   height: 20px;
   fill: #fff;
