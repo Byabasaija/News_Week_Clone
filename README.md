@@ -1,10 +1,19 @@
 # News_Week_Clone
 
-> Third Project at Microverse to get better at using CSS frameworks like Bootstrap.
+> Third Project at Microverse to get better at using CSS frameworks like Bootstrap. In this project we are cloning the Newsweek homepage.
+
+![microverse](https://camo.githubusercontent.com/3a5835d4f56c57cec85939ac345e43fef164c178/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4d6963726f76657273652d626c756576696f6c6574)
 
 ## Screenshot
 
-Screenshot: ![Screenshot of the News Week Page](./assets/img/screenshot.png)
+### Mobile:
+![Screenshot of the News Week Page](./assets/screenshots/screenshot1.png)
+
+### Tablet:
+![Screenshot of the News Week Page](./assets/screenshots/screenshot2.png)
+
+### Desktop:
+![Screenshot of the News Week Page](./assets/screenshots/screenshot3.png)
 
 ## Description
 
@@ -22,7 +31,7 @@ It is a static version. All contents (texts, images, icons and fonts) have been 
 - VScode
 
 ## Demo Link
-[Live Demo Link](https://krishnzzz.github.io/News_Week_Clone/)
+[Live Demo Link](https://krishnzzz.github.io/Newsweek_Clone/)
 
 ## Contributing
 Contributions, issues and feature requests are welcome! Start by:
@@ -42,7 +51,7 @@ Contributions, issues and feature requests are welcome! Start by:
 👤 Suyash Fowdar
 Github: [@Krishnzzz](https://github.com/krishnzzz)
 
-👤 Elisha Kyakopo
+👤 Pascal Byabasaija
 Github: [@Byabasaija](https://github.com/Byabasaija)
 
 ## Show your Support
